@@ -23,25 +23,8 @@ public class _02Assertions {
                 .when()
                 .get("/api/users/{id}")
                 .then()
-                .statusCode(200)
                 .log().body()
-                .body("data.first_name", equalTo("Janet"))
-                .body("data.last_name",equalTo("Weaver"))
-                .body("data",hasKey("id"))
-                .body("data",hasKey("avatar"))
-                .body(containsString("contributions"))
-                .body("data.id", lessThanOrEqualTo(2))
-                ;
-
-    }@Test
-    public void test02_viaDataProvider(){
-        given()
-                .pathParams("id",2)
-                .when()
-                .get("/api/users/{id}")
-                .then()
-                .log().body()
-                    //statusCode 200 olmali
+                //statusCode 200 olmali
                 .statusCode(200)
 
                 //data'nin icindeki first_name Janet olmali
@@ -65,12 +48,26 @@ public class _02Assertions {
                 ;
 
     }
+    @Test(dataProvider = "getIds")
+    public void test02_viaDataProvider(int id){
+        given()
+                .pathParams("id",id)
+                .when()
+                .get("/api/users/{id}")
+                .then()
+                .log().body()
+                .statusCode(200)
+
+                ;
+
+    }
 
     @DataProvider
-    public Object[][] datas(){
+    public Object[][] getIds(){
         return new  Object[][] {
-                {"Janet"},
-                {"Weaver"}
+                {1},
+                {2},
+                {3}
         };
     }
 }

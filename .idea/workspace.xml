@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73d16240-79f2-4115-b254-2218a6d9eab0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/basics/_01Basics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/basics/_02Assertions.java" afterDir="false" />
+    <list default="true" id="73d16240-79f2-4115-b254-2218a6d9eab0" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/src/test/java/localJsonServer/LocalTestDb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/basics/_02Assertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basics/_02Assertions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,13 +22,21 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 2
 }]]></component>
   <component name="ProjectId" id="2bUytcdMk8GnIztF5QmqoJTEZmc" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
@@ -44,66 +47,50 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.LocalTestDb.executor": "Run",
+    "TestNG.LocalTestDb.test01_getAllPosts.executor": "Run",
     "TestNG._01Basics.test02.executor": "Run",
     "TestNG._01Basics.test03_statusCode.executor": "Run",
     "TestNG._01Basics.test04_statusCode.executor": "Run",
     "TestNG._01Basics.test05_parameters.executor": "Run",
     "TestNG._01Basics.test07_baseUri.executor": "Run",
     "TestNG._02Assertions.test01.executor": "Run",
+    "TestNG._02Assertions.test02_viaDataProvider.executor": "Run",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG._02Assertions.test01">
-    <configuration name="_01Basics.test03_statusCode" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.LocalTestDb.test01_getAllPosts">
+    <configuration name="LocalTestDb" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="B2RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="basics.*" />
+          <option name="PATTERN" value="localJsonServer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="basics" />
-      <option name="MAIN_CLASS_NAME" value="basics._01Basics" />
-      <option name="METHOD_NAME" value="test03_statusCode" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="localJsonServer" />
+      <option name="MAIN_CLASS_NAME" value="localJsonServer.LocalTestDb" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_01Basics.test04_statusCode" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LocalTestDb.test01_getAllPosts" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="B2RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="basics.*" />
+          <option name="PATTERN" value="localJsonServer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="basics" />
-      <option name="MAIN_CLASS_NAME" value="basics._01Basics" />
-      <option name="METHOD_NAME" value="test04_statusCode" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_01Basics.test05_parameters" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="B2RestAssured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="basics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="basics" />
-      <option name="MAIN_CLASS_NAME" value="basics._01Basics" />
-      <option name="METHOD_NAME" value="test05_parameters" />
+      <option name="PACKAGE_NAME" value="localJsonServer" />
+      <option name="MAIN_CLASS_NAME" value="localJsonServer.LocalTestDb" />
+      <option name="METHOD_NAME" value="test01_getAllPosts" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -147,13 +134,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_02Assertions.test02_viaDataProvider" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="B2RestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="basics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="basics" />
+      <option name="MAIN_CLASS_NAME" value="basics._02Assertions" />
+      <option name="METHOD_NAME" value="test02_viaDataProvider" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LocalTestDb.test01_getAllPosts" />
+        <item itemvalue="TestNG.LocalTestDb" />
+        <item itemvalue="TestNG._02Assertions.test02_viaDataProvider" />
         <item itemvalue="TestNG._02Assertions.test01" />
         <item itemvalue="TestNG._01Basics.test07_baseUri" />
-        <item itemvalue="TestNG._01Basics.test05_parameters" />
-        <item itemvalue="TestNG._01Basics.test04_statusCode" />
-        <item itemvalue="TestNG._01Basics.test03_statusCode" />
       </list>
     </recent_temporary>
   </component>
@@ -174,6 +179,19 @@
       <option name="presentableId" value="Default" />
       <updated>1706284168409</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1706294015111</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706294015111</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>
