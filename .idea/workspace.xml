@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73d16240-79f2-4115-b254-2218a6d9eab0" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/localJsonServer/LocalTestDb.java" afterDir="false" />
+    <list default="true" id="73d16240-79f2-4115-b254-2218a6d9eab0" name="Changes" comment="API testing via local server/Asseritons">
+      <change afterPath="$PROJECT_DIR$/src/test/java/localJsonServer/LongNameTeset.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/zippo/Zippo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/basics/_02Assertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basics/_02Assertions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localJsonServer/LocalTestDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/localJsonServer/LocalTestDb.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +31,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2bUytcdMk8GnIztF5QmqoJTEZmc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -44,11 +45,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.LocalTestDb.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.LocalTestDb.executor": "Run",
+    "TestNG.LocalTestDb.localPostTest.executor": "Run",
     "TestNG.LocalTestDb.test01_getAllPosts.executor": "Run",
+    "TestNG.LocalTestDb.test02_getAllPosts.executor": "Run",
+    "TestNG.LongNameTeset.executor": "Run",
+    "TestNG.LongNameTeset.findLongestNameAmongstTheData.executor": "Run",
+    "TestNG.LongNameTeset.postUsersTest1.executor": "Run",
+    "TestNG.Zippo.test1.executor": "Run",
+    "TestNG.Zippo.test2.executor": "Run",
     "TestNG._01Basics.test02.executor": "Run",
     "TestNG._01Basics.test03_statusCode.executor": "Run",
     "TestNG._01Basics.test04_statusCode.executor": "Run",
@@ -59,11 +68,12 @@
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.Jenkins"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.LocalTestDb.test01_getAllPosts">
-    <configuration name="LocalTestDb" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Zippo.test2">
+    <configuration name="LocalTestDb.localPostTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="B2RestAssured" />
       <extension name="coverage">
         <pattern>
@@ -73,14 +83,15 @@
       </extension>
       <option name="PACKAGE_NAME" value="localJsonServer" />
       <option name="MAIN_CLASS_NAME" value="localJsonServer.LocalTestDb" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="localPostTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocalTestDb.test01_getAllPosts" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LongNameTeset.findLongestNameAmongstTheData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="B2RestAssured" />
       <extension name="coverage">
         <pattern>
@@ -89,8 +100,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="localJsonServer" />
-      <option name="MAIN_CLASS_NAME" value="localJsonServer.LocalTestDb" />
-      <option name="METHOD_NAME" value="test01_getAllPosts" />
+      <option name="MAIN_CLASS_NAME" value="localJsonServer.LongNameTeset" />
+      <option name="METHOD_NAME" value="findLongestNameAmongstTheData" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -98,17 +109,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_01Basics.test07_baseUri" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LongNameTeset.postUsersTest1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="B2RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="basics.*" />
+          <option name="PATTERN" value="localJsonServer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="basics" />
-      <option name="MAIN_CLASS_NAME" value="basics._01Basics" />
-      <option name="METHOD_NAME" value="test07_baseUri" />
+      <option name="PACKAGE_NAME" value="localJsonServer" />
+      <option name="MAIN_CLASS_NAME" value="localJsonServer.LongNameTeset" />
+      <option name="METHOD_NAME" value="postUsersTest1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -116,17 +127,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_02Assertions.test01" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Zippo.test1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="B2RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="basics.*" />
+          <option name="PATTERN" value="zippo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="basics" />
-      <option name="MAIN_CLASS_NAME" value="basics._02Assertions" />
-      <option name="METHOD_NAME" value="test01" />
+      <option name="PACKAGE_NAME" value="zippo" />
+      <option name="MAIN_CLASS_NAME" value="zippo.Zippo" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -134,17 +145,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_02Assertions.test02_viaDataProvider" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Zippo.test2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="B2RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="basics.*" />
+          <option name="PATTERN" value="zippo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="basics" />
-      <option name="MAIN_CLASS_NAME" value="basics._02Assertions" />
-      <option name="METHOD_NAME" value="test02_viaDataProvider" />
+      <option name="PACKAGE_NAME" value="zippo" />
+      <option name="MAIN_CLASS_NAME" value="zippo.Zippo" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -154,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LocalTestDb.test01_getAllPosts" />
-        <item itemvalue="TestNG.LocalTestDb" />
-        <item itemvalue="TestNG._02Assertions.test02_viaDataProvider" />
-        <item itemvalue="TestNG._02Assertions.test01" />
-        <item itemvalue="TestNG._01Basics.test07_baseUri" />
+        <item itemvalue="TestNG.Zippo.test2" />
+        <item itemvalue="TestNG.Zippo.test1" />
+        <item itemvalue="TestNG.LongNameTeset.findLongestNameAmongstTheData" />
+        <item itemvalue="TestNG.LongNameTeset.postUsersTest1" />
+        <item itemvalue="TestNG.LocalTestDb.localPostTest" />
       </list>
     </recent_temporary>
   </component>
@@ -187,11 +198,20 @@
       <option name="project" value="LOCAL" />
       <updated>1706294015111</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="API testing via local server">
+      <option name="closed" value="true" />
+      <created>1706378399010</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706378399010</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="API testing via local server" />
+    <option name="LAST_COMMIT_MESSAGE" value="API testing via local server" />
   </component>
 </project>
