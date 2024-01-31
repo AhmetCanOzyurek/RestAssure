@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73d16240-79f2-4115-b254-2218a6d9eab0" name="Changes" comment="API testing via local server/Asseritons">
-      <change afterPath="$PROJECT_DIR$/src/test/java/localJsonServer/LongNameTeset.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/zippo/Zippo.java" afterDir="false" />
+    <list default="true" id="73d16240-79f2-4115-b254-2218a6d9eab0" name="Changes" comment="Zippopotam.us APİ tests via RestAssure">
+      <change afterPath="$PROJECT_DIR$/src/test/java/goRest/getAllUsers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/zippo/Zippo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/zippo/pojoClasse/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/zippo/pojoClasse/Place.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/localJsonServer/LocalTestDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/localJsonServer/LocalTestDb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +33,20 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AhmetCanOzyurek&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="0a8d9c29-4a4a-4ffb-90c7-88e77eda7e0f" />
+        <option name="url" value="https://github.com/AhmetCanOzyurek/RestAssure.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -46,6 +62,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.LocalTestDb.executor": "Run",
+    "Maven.B2RestAssured [clean].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -58,6 +75,16 @@
     "TestNG.LongNameTeset.postUsersTest1.executor": "Run",
     "TestNG.Zippo.test1.executor": "Run",
     "TestNG.Zippo.test2.executor": "Run",
+    "TestNG.Zippo2.getDataAndAssertionTest.executor": "Run",
+    "TestNG.Zippo2.getDataExtractPlaceName.executor": "Run",
+    "TestNG.Zippo2.getDataExtractPlaceName2.executor": "Run",
+    "TestNG.Zippo2.getDataExtractPlaceNames.executor": "Run",
+    "TestNG.Zippo2.getDataToPojo (1).executor": "Debug",
+    "TestNG.Zippo2.getDataToPojo.executor": "Run",
+    "TestNG.Zippo2.matchTest.executor": "Run",
+    "TestNG.Zippo2.test1_getData06080.executor": "Run",
+    "TestNG.Zippo2.test2_getDataAllStatesAreAnkara.executor": "Run",
+    "TestNG.Zippo2.test2_getDataUsePathParam.executor": "Run",
     "TestNG._01Basics.test02.executor": "Run",
     "TestNG._01Basics.test03_statusCode.executor": "Run",
     "TestNG._01Basics.test04_statusCode.executor": "Run",
@@ -65,25 +92,30 @@
     "TestNG._01Basics.test07_baseUri.executor": "Run",
     "TestNG._02Assertions.test01.executor": "Run",
     "TestNG._02Assertions.test02_viaDataProvider.executor": "Run",
+    "TestNG.getAllUsers.getAllUsersTest.executor": "Run",
+    "TestNG.getAllUsers.getFirstNameTest (1).executor": "Run",
+    "TestNG.getAllUsers.getFirstNameTest.executor": "Run",
+    "TestNG.getAllUsers.test3_GetAllNamesThenSortThenWriteToConsol.executor": "Run",
+    "TestNG.getAllUsers.test3_getFemaleNamesThenSortThenWriteToConsol.executor": "Run",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.Jenkins"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.Zippo.test2">
-    <configuration name="LocalTestDb.localPostTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.getAllUsers.test3_getFemaleNamesThenSortThenWriteToConsol">
+    <configuration name="getAllUsers.getAllUsersTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="B2RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="localJsonServer.*" />
+          <option name="PATTERN" value="goRest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="localJsonServer" />
-      <option name="MAIN_CLASS_NAME" value="localJsonServer.LocalTestDb" />
-      <option name="METHOD_NAME" value="localPostTest" />
+      <option name="PACKAGE_NAME" value="goRest" />
+      <option name="MAIN_CLASS_NAME" value="goRest.getAllUsers" />
+      <option name="METHOD_NAME" value="getAllUsersTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -91,17 +123,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongNameTeset.findLongestNameAmongstTheData" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="getAllUsers.getFirstNameTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="B2RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="localJsonServer.*" />
+          <option name="PATTERN" value="goRest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="localJsonServer" />
-      <option name="MAIN_CLASS_NAME" value="localJsonServer.LongNameTeset" />
-      <option name="METHOD_NAME" value="findLongestNameAmongstTheData" />
+      <option name="PACKAGE_NAME" value="goRest" />
+      <option name="MAIN_CLASS_NAME" value="goRest.getAllUsers" />
+      <option name="METHOD_NAME" value="getFirstNameTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -109,17 +141,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongNameTeset.postUsersTest1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="getAllUsers.getFirstNameTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="B2RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="localJsonServer.*" />
+          <option name="PATTERN" value="goRest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="localJsonServer" />
-      <option name="MAIN_CLASS_NAME" value="localJsonServer.LongNameTeset" />
-      <option name="METHOD_NAME" value="postUsersTest1" />
+      <option name="PACKAGE_NAME" value="goRest" />
+      <option name="MAIN_CLASS_NAME" value="goRest.getAllUsers" />
+      <option name="METHOD_NAME" value="getFirstNameTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -127,17 +159,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Zippo.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="getAllUsers.test3_GetAllNamesThenSortThenWriteToConsol" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="B2RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="zippo.*" />
+          <option name="PATTERN" value="goRest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="zippo" />
-      <option name="MAIN_CLASS_NAME" value="zippo.Zippo" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="goRest" />
+      <option name="MAIN_CLASS_NAME" value="goRest.getAllUsers" />
+      <option name="METHOD_NAME" value="test3_GetAllNamesThenSortThenWriteToConsol" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -145,17 +177,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Zippo.test2" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="getAllUsers.test3_getFemaleNamesThenSortThenWriteToConsol" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="B2RestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="zippo.*" />
+          <option name="PATTERN" value="goRest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="zippo" />
-      <option name="MAIN_CLASS_NAME" value="zippo.Zippo" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="PACKAGE_NAME" value="goRest" />
+      <option name="MAIN_CLASS_NAME" value="goRest.getAllUsers" />
+      <option name="METHOD_NAME" value="test3_getFemaleNamesThenSortThenWriteToConsol" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -165,18 +197,17 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Zippo.test2" />
-        <item itemvalue="TestNG.Zippo.test1" />
-        <item itemvalue="TestNG.LongNameTeset.findLongestNameAmongstTheData" />
-        <item itemvalue="TestNG.LongNameTeset.postUsersTest1" />
-        <item itemvalue="TestNG.LocalTestDb.localPostTest" />
+        <item itemvalue="TestNG.getAllUsers.test3_getFemaleNamesThenSortThenWriteToConsol" />
+        <item itemvalue="TestNG.getAllUsers.test3_GetAllNamesThenSortThenWriteToConsol" />
+        <item itemvalue="TestNG.getAllUsers.getFirstNameTest (1)" />
+        <item itemvalue="TestNG.getAllUsers.getFirstNameTest" />
+        <item itemvalue="TestNG.getAllUsers.getAllUsersTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-9b16c6e2" />
         <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
       </set>
     </attachedChunks>
@@ -206,12 +237,22 @@
       <option name="project" value="LOCAL" />
       <updated>1706378399010</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Long Name Test and zippopotam site.">
+      <option name="closed" value="true" />
+      <created>1706645695724</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706645695724</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="API testing via local server" />
-    <option name="LAST_COMMIT_MESSAGE" value="API testing via local server" />
+    <MESSAGE value="Long Name Test and zippopotam site." />
+    <MESSAGE value="Zippopotam.us APİ tests via RestAssure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zippopotam.us APİ tests via RestAssure" />
   </component>
 </project>
