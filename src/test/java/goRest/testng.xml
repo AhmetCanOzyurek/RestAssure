@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="GoRestUserTest">
+        <classes>
+            <class name="goRest.GoRestUserTest">
+                <methods>
+                    <include name="postAUserTest"/>
+                    <include name="updateAUserTest"/>
+                    <include name="deleteAUserTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

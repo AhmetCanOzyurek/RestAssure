@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73d16240-79f2-4115-b254-2218a6d9eab0" name="Changes" comment="Zippopotam.us APİ tests via RestAssure">
+    <list default="true" id="73d16240-79f2-4115-b254-2218a6d9eab0" name="Changes" comment="Zippopotam.us APİ testing via RestAssure using POJO">
+      <change afterPath="$PROJECT_DIR$/src/test/java/goRest/GoRestUserTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/goRest/getAllUsers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/zippo/Zippo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/zippo/pojoClasse/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/zippo/pojoClasse/Place.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/goRest/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -61,11 +60,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.LocalTestDb.executor": "Run",
     "Maven.B2RestAssured [clean].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.GoRestUserTest.deleteAUserTest.executor": "Run",
+    "TestNG.GoRestUserTest.postAUserTest.executor": "Run",
+    "TestNG.GoRestUserTest.updateAUserTest.executor": "Run",
     "TestNG.LocalTestDb.executor": "Run",
     "TestNG.LocalTestDb.localPostTest.executor": "Run",
     "TestNG.LocalTestDb.test01_getAllPosts.executor": "Run",
@@ -96,6 +99,7 @@
     "TestNG.getAllUsers.getFirstNameTest (1).executor": "Run",
     "TestNG.getAllUsers.getFirstNameTest.executor": "Run",
     "TestNG.getAllUsers.test3_GetAllNamesThenSortThenWriteToConsol.executor": "Run",
+    "TestNG.getAllUsers.test3_getAllNameWithJsonPath.executor": "Run",
     "TestNG.getAllUsers.test3_getFemaleNamesThenSortThenWriteToConsol.executor": "Run",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Project",
@@ -104,8 +108,13 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.getAllUsers.test3_getFemaleNamesThenSortThenWriteToConsol">
-    <configuration name="getAllUsers.getAllUsersTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/goRest" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.GoRestUserTest.deleteAUserTest">
+    <configuration name="GoRestUserTest.deleteAUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="B2RestAssured" />
       <extension name="coverage">
         <pattern>
@@ -114,8 +123,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="goRest" />
-      <option name="MAIN_CLASS_NAME" value="goRest.getAllUsers" />
-      <option name="METHOD_NAME" value="getAllUsersTest" />
+      <option name="MAIN_CLASS_NAME" value="goRest.GoRestUserTest" />
+      <option name="METHOD_NAME" value="deleteAUserTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -123,7 +132,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="getAllUsers.getFirstNameTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GoRestUserTest.updateAUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="B2RestAssured" />
       <extension name="coverage">
         <pattern>
@@ -132,26 +141,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="goRest" />
-      <option name="MAIN_CLASS_NAME" value="goRest.getAllUsers" />
-      <option name="METHOD_NAME" value="getFirstNameTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="getAllUsers.getFirstNameTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="B2RestAssured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="goRest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="goRest" />
-      <option name="MAIN_CLASS_NAME" value="goRest.getAllUsers" />
-      <option name="METHOD_NAME" value="getFirstNameTest" />
+      <option name="MAIN_CLASS_NAME" value="goRest.GoRestUserTest" />
+      <option name="METHOD_NAME" value="updateAUserTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -170,6 +161,24 @@
       <option name="PACKAGE_NAME" value="goRest" />
       <option name="MAIN_CLASS_NAME" value="goRest.getAllUsers" />
       <option name="METHOD_NAME" value="test3_GetAllNamesThenSortThenWriteToConsol" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="getAllUsers.test3_getAllNameWithJsonPath" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="B2RestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="goRest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="goRest" />
+      <option name="MAIN_CLASS_NAME" value="goRest.getAllUsers" />
+      <option name="METHOD_NAME" value="test3_getAllNameWithJsonPath" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -197,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GoRestUserTest.deleteAUserTest" />
+        <item itemvalue="TestNG.GoRestUserTest.updateAUserTest" />
         <item itemvalue="TestNG.getAllUsers.test3_getFemaleNamesThenSortThenWriteToConsol" />
+        <item itemvalue="TestNG.getAllUsers.test3_getAllNameWithJsonPath" />
         <item itemvalue="TestNG.getAllUsers.test3_GetAllNamesThenSortThenWriteToConsol" />
-        <item itemvalue="TestNG.getAllUsers.getFirstNameTest (1)" />
-        <item itemvalue="TestNG.getAllUsers.getFirstNameTest" />
-        <item itemvalue="TestNG.getAllUsers.getAllUsersTest" />
       </list>
     </recent_temporary>
   </component>
@@ -245,14 +254,24 @@
       <option name="project" value="LOCAL" />
       <updated>1706645695724</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Zippopotam.us APİ testing via RestAssure using POJO">
+      <option name="closed" value="true" />
+      <created>1706727411714</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706727411714</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="API testing via local server" />
     <MESSAGE value="Long Name Test and zippopotam site." />
     <MESSAGE value="Zippopotam.us APİ tests via RestAssure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zippopotam.us APİ tests via RestAssure" />
+    <MESSAGE value="Zippopotam.us APİ testing via RestAssure using POJO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zippopotam.us APİ testing via RestAssure using POJO" />
   </component>
 </project>
