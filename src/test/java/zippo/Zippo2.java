@@ -1,5 +1,6 @@
 package zippo;
 
+
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -13,7 +14,8 @@ import org.testng.annotations.Test;
 import zippo.pojoClasse.Location;
 import zippo.pojoClasse.Place;
 
-
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.List;
 
 import static io.restassured.RestAssured.given;
@@ -178,9 +180,10 @@ public class Zippo2 {
         System.out.println("longestName = " + longestName);
     }
 
-   //  /TR/06080 datasini pojoya map edin
+    //  /TR/06080 datasini pojoya map edin
     @Test
     public void getDataToPojo() {
+
         Response res = given()
                 .spec(requestSpecification)
                 .when()
@@ -201,6 +204,42 @@ public class Zippo2 {
             }
         }
     }
+
+    @Test
+    public void getDataToPojo1() throws IOException {
+        FileWriter fileWriter = new FileWriter(("Places.txt"));
+        for (int i = 6095; i < 6100; i++) {
+            String postCode = getPostaKodu(i);
+            Response res = given()
+                    .spec(requestSpecification)
+                    .when()
+                    .get("/TR/06080")
+                    .then()
+                    //.spec(responseSpecification)
+                    .extract().response();
+            Location location = res.then().extract().as(Location.class);
+            if (res != null) {
+                for (Place place : location.getPlaces()) {
+                    String str = location.getCountry() + "\t" +
+                            place.getState() + "\n" +
+                            place.getPlaceName();
+                    fileWriter.write(str);
+                }
+
+            }
+
+        }
+        fileWriter.close();
+    }
+
+    public String getPostaKodu(int num) {
+        String code = String.valueOf(num);
+        for (int i = code.length(); i < 5; i++) {
+            code = "0".concat(code);
+        }
+        return code;
+    }
+
 }
 
 
